@@ -1,0 +1,16 @@
+<div>
+  <input [(ngModel)]="term" placeholder="Search dishes or restaurants">
+  <button (click)="onSearch()">Search</button>
+</div>
+
+<div *ngIf="results">
+  <h3>Dishes</h3>
+  <ul>
+    <li *ngFor="let dish of results.dishes">{{ dish.name }}</li>
+  </ul>
+
+  <h3>Restaurants</h3>
+  <ul>
+    <li *ngFor="let restaurant of results.restaurants">{{ restaurant.name }}</li>
+  </ul>
+</div>

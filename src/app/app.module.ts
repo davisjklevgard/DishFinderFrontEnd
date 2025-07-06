@@ -4,16 +4,15 @@ import { FormsModule } from '@angular/forms';              // <-- Add this for n
 import { HttpClientModule } from '@angular/common/http';   // <-- Add this for HTTP calls
 
 import { AppComponent } from './app.component';
-import { SearchComponent } from './search/search.component'; // <-- This was generated earlier
+import { SearchComponent } from './features/search/search.component'; // <-- This was generated earlier
 
 import { RouterModule } from '@angular/router';
-import { DishComponent } from './dish/dish.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    DishComponent
   ],
   imports: [
     BrowserModule,
