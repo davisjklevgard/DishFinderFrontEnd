@@ -1,0 +1,46 @@
+.search-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.search-form input[type="text"] {
+  flex-grow: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.search-form button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.loading {
+  font-style: italic;
+}
+
+.error {
+  color: red;
+}
+
+.results-section {
+  margin-top: 1rem;
+}
+
+.results-section h3 {
+  margin-bottom: 0.5rem;
+}
+
+.dish-link {
+  text-decoration: none;
+  color: inherit; /* or your preferred color */
+}
