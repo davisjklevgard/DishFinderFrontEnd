@@ -6,11 +6,13 @@
 <div *ngIf="results">
   <h3>Dishes</h3>
   <ul>
-    <li *ngFor="let dish of results.dishes">{{ dish.name }}</li>
+    <li *ngFor="let dish of results.dishes">
+      <a [routerLink]="['/dishes', dish.id]">{{ dish.name}}</a></li>
   </ul>
 
   <h3>Restaurants</h3>
   <ul>
-    <li *ngFor="let restaurant of results.restaurants">{{ restaurant.name }}</li>
+    <li *ngFor="let restaurant of results.restaurants">
+      <a [routerLink]="['/restaurants', restaurant.id]">{{ restaurant.name}}</a></li>
   </ul>
 </div>

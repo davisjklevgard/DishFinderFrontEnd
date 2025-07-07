@@ -4,15 +4,19 @@ import { FormsModule } from '@angular/forms';              // <-- Add this for n
 import { HttpClientModule } from '@angular/common/http';   // <-- Add this for HTTP calls
 
 import { AppComponent } from './app.component';
-import { SearchComponent } from './features/search/search.component'; // <-- This was generated earlier
+import { SearchComponent } from './features/search/search.component';
 
 import { RouterModule } from '@angular/router';
+import { DishDetailComponent } from './features/dish-detail/dish-detail.component';
+import { RestaurantDetailComponent } from './features/restaurant-detail/restaurant-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
+    DishDetailComponent,
+    RestaurantDetailComponent,
   ],
   imports: [
     BrowserModule,
