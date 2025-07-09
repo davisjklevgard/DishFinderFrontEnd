@@ -22,7 +22,12 @@ import { RestaurantDetailComponent } from './features/restaurant-detail/restaura
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule.forRoot([
+      { path: '', redirectTo: '/search', pathMatch: 'full' },
+      { path: 'search', component: SearchComponent },
+      { path: 'dishes/:id', component: DishDetailComponent },
+      { path: 'restaurants/:id', component: RestaurantDetailComponent },
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]

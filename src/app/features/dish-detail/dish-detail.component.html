@@ -3,3 +3,4 @@
   <p>{{ dish.description }}</p>
   <!-- Add more fields as needed -->
 </div>
+<button (click)="saveDish()" [disabled]="!dish?.id">Save Dish</button>

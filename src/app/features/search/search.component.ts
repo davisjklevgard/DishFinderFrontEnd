@@ -15,8 +15,10 @@ export class SearchComponent {
   onSearch() {
     if (this.term.trim()) {
       this.searchService.search(this.term.trim()).subscribe(data => {
+        console.log('SEARCH RESULTS:', data);  // 👈 add this
         this.results = data;
       });
     }
   }
+
 }
